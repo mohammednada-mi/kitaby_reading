@@ -1,0 +1,35 @@
+# This file configures the analyzer, which statically analyzes Dart code to
+# check for errors, warnings, and lints.
+#
+# The issues identified by the analyzer are surfaced in the UI of Dart-enabled
+# IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
+# invoked from the command line by running `flutter analyze`.
+
+# The following line activates a set of recommended lints for Flutter apps,
+# packages, plugins, and libraries. Recommended lints are continuously updated
+# to reflect Flutter best practices.
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  # The lint rules are categorized pursuant to the Dart style guide
+  # (https://dart.dev/guides/language/effective-dart/style)
+  #
+  # These rules enforce recommended practices, potentially avoiding errors
+  # and improving the readability of your code.
+  #
+  # For a full list of supported rules, see
+  # https://dart-lang.github.io/linter/lints/options/options.html
+
+  # Uncomment to disable specific rules. Alternatively, you can disable rules
+  # in-line comments by using // ignore: name_of_lint, or
+  # // ignore_for_file: name_of_lint. Disable as few rules as possible.
+  rules:
+    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
+    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+    # prefer_const_constructors: true # Enforce const constructors where possible
+    # prefer_final_fields: true # Prefer final for instance fields initialized only in constructor
+    # unnecessary_new: true # Avoid 'new' keyword
+    # unnecessary_const: true # Avoid 'const' keyword when not needed
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
