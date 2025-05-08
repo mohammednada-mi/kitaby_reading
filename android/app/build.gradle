@@ -50,11 +50,16 @@ android {
 
     signingConfigs {
         release {
-            if (System.getenv()["BITRISEIO_ANDROID_KEYSTORE_URL"]) {
-                storeFile file(System.getenv()["BITRISEIO_ANDROID_KEYSTORE_PATH"])
-                storePassword System.getenv()["BITRISEIO_ANDROID_KEYSTORE_PASSWORD"]
-                keyAlias System.getenv()["BITRISEIO_ANDROID_KEYSTORE_ALIAS"]
-                keyPassword System.getenv()["BITRISEIO_ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD"]
+            if (System.getenv()["CM_KEYSTORE_PATH"]) {
+                storeFile file(System.getenv()["CM_KEYSTORE_PATH"])
+                storePassword System.getenv()["CM_KEYSTORE_PASSWORD"]
+                keyAlias System.getenv()["CM_KEY_ALIAS"]
+                keyPassword System.getenv()["CM_KEY_PASSWORD"]
+            } else {
+                storeFile file("keystore/kitaby.keystore")
+                storePassword "kitaby"
+                keyAlias "kitaby"
+                keyPassword "kitaby"
             }
         }
         debug {
